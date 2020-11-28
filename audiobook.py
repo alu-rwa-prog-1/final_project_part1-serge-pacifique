@@ -3,6 +3,8 @@ from item import Item
 
 # Creating a child class
 class Audiobook(Item):
+    """This is a class child for our Audiobook with its specifications
+    """
     def __init__(self, title, genre, no_item, donor_name, author, published_year, rental_price, selling_price):
         super().__init__(title, genre, no_item, donor_name)
         self.author = author
