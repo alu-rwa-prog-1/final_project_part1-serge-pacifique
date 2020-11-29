@@ -2,7 +2,26 @@ import unittest
 
 from item import Item
 
-class Test_item(unittest.TestCase):
-    def test_init(self):
-        Anna = Item("Anna")
-        self.assertEqual(Anna.title, "Anna")
+class TestItem(unittest.TestCase):
+    def test_title(self):
+        testtitle = Item("The 100")
+        self.assertEqual(testtitle.title, "The 100")
+
+    # def test_genre(self):
+    #     testgenre = Item("", "science fiction")
+    #     self.assertEqual(testgenre.title, "", "science fiction")
+    #
+    # def test_noitems(self):
+    #     testnoitem = Item("", "", 1, "", 0)
+    #     self.assertNotEqual(testnoitem.title, "", "", 1, "", 0)
+    #
+    # def test_sellingprice(self):
+    #     pass
+    #
+    # def testnoitems(self):
+    #     pass
+
+if __name__ == '__main__':
+  unittest.main()
+
+
