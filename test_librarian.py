@@ -18,19 +18,27 @@ class Test_librarian(unittest.TestCase):
   def sell(self):
     """ Testing code of sell method
     """
+    film = Librarian("film")
+    self.assertEqual(film.type_item, "film")
     
     
   def rent(self):
     """ Testing code of rent method
     """
+    audiobook = Librarian("audiobook")
+    self.assertEqual(audiobook.type_item, "audiobook")
     
   def view(self):
     """ Testing code of view method
     """
+    audiobook = Librarian("audiobook")
+    self.assertNotEqual(audiobook.type_item, "book")
     
   def lend(self):
     """ Testing code of lend method
     """
+    film = Librarian("film")
+    self.assertEqual(film.type_item, "film")
       
       
     
