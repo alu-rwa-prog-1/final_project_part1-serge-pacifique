@@ -3,7 +3,7 @@ import unittest
 from item import Item
 
 class TestItem(unittest.TestCase):
-    def test_title(self):
+    def test_init(self):
         testtitle = Item("The 100")
         self.assertEqual(testtitle.title, "The 100")
 
