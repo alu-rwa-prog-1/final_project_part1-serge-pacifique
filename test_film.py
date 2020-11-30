@@ -6,7 +6,7 @@ class Test_Film(unittest.TestCase):
   """ The Test case for Film
   """
   
-  def Test_init(test):
+  def Test_init(self):
     Action film = Film("Action film")
     self.assertEqual(Action film.type, "Action film")
     2019 = Film("2019")
