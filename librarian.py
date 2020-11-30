@@ -6,8 +6,12 @@ from film import Film
 
 # Class Creation
 class Librarian(Film, Audiobook):
+    """ This is a Librarian Class with its characteristics
+    """
     # Add method
     def add(self, books, audiobooks, films):
+        """ This method allow the Librarian to add Item
+        """
         print("ADDING AN ITEM PROCESS \n_____________________________")
         type_item = input("PLEASE ENTER THE ITEM YOU ARE GOING TO ADD: ")
         # Adding Audiobook
@@ -53,6 +57,8 @@ class Librarian(Film, Audiobook):
 
     # Sell method
     def sell(self, books, audiobooks, films):
+        """ This method allow the Librarian to sell Item
+        """
         print("SELLING AN ITEM PROCESS \n_____________________________")
         typeitem = input("PLEASE ENTER THE ITEM YOU ARE GOING TO SELL: ")
         if typeitem.lower() == "book":
@@ -84,6 +90,8 @@ class Librarian(Film, Audiobook):
 
     # Renting method
     def rent(self, audiobooks, films):
+        """ This method allow the Librarian to rent Item
+        """ 
         print("RENTING AN ITEM PROCESS \n_____________________________")
         typeitem = input("PLEASE ENTER THE ITEM YOU ARE GOING TO RENT: ")
         if typeitem.lower() == "audiobook":
@@ -107,6 +115,8 @@ class Librarian(Film, Audiobook):
 
     # Lend method
     def lend(self, books):
+        """ This method allow the Librarian to lend Item
+        """
         titlebook = input("PLEASE ENTER THE BOOK YOU WANT TO LEND: ")
         if titlebook:
             for x in books:
@@ -117,6 +127,8 @@ class Librarian(Film, Audiobook):
 
     # View method
     def view(self, books, audiobooks, films):
+        """ View method help the Librarian to view Item
+        """
         print("YOU CAN VIEW ALL ITEMS FROM HERE \n--------------------------------")
         toview = input("WHICH ITEMS DO YOU WANT TO VIEW: ")
         if toview.lower() == "books":
