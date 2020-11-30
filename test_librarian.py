@@ -43,3 +43,5 @@ class Test_librarian(unittest.TestCase):
       
     
     
+  if__name__ == "__main":
+    unittest.main()
