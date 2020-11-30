@@ -6,7 +6,7 @@ class Test_audiobook(unittest.TestCase):
   """ This is our test class for audiobook
   """
   
-  def test_init(test):
+  def test_init(self):
     The 100 = audiobook("The 100")
     self.assertEqual(The 100.title, " The 100")
     Chinua Achebe = audiobook("Chinua Achebe")
